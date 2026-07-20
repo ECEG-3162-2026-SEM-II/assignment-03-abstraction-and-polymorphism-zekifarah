@@ -1,21 +1,19 @@
 package com.jju;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
-        // Polymorphic List: Holds different types of devices under one parent type
-        List<SmartDevice> home = new ArrayList<>();
+        // 1. SmartDevice መያዝ የሚችል ArrayList መፍጠር
+        ArrayList<SmartDevice> devices = new ArrayList<>();
 
-        home.add(new SmartLight("Living Room Lamp"));
-        home.add(new SmartThermostat("Hallway Nest"));
+        // 2. የLight እና Thermostat object-ዎችን ወደ list-ቱ መጨመር
+        devices.add(new SmartLight("Living Room Light"));
+        devices.add(new SmartThermostat("Main Thermostat"));
 
-        System.out.println("--- Activating Smart Home ---");
-
-        // Polymorphic Loop: The 'device' variable takes many forms
-        for (SmartDevice device : home) {
-            device.activate(); 
+        // 3. በነጠላ for-each loop ሁሉንም መጥራት (Polymorphism)
+        for (SmartDevice device : devices) {
+            device.activate();
         }
     }
 }

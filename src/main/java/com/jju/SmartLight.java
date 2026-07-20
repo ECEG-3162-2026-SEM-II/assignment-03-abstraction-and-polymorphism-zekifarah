@@ -1,5 +1,7 @@
 package com.jju;
 
+
+
 public class SmartLight extends SmartDevice {
     public SmartLight(String name) {
         super(name);
@@ -7,7 +9,7 @@ public class SmartLight extends SmartDevice {
 
     @Override
     public void activate() {
-        // TODO: Print "[Name] is now ON at 100% brightness."
+        System.out.println(getName() + " is now ON at 100% brightness.");
     }
 }
 
