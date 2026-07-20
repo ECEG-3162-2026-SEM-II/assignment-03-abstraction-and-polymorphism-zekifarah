@@ -1,4 +1,4 @@
-package com.jju;
+
 
 public abstract class SmartDevice {
     

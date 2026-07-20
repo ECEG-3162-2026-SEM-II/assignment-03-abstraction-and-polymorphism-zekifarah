@@ -1,5 +1,3 @@
-package com.jju;
-
 
 
 public class SmartLight extends SmartDevice {
