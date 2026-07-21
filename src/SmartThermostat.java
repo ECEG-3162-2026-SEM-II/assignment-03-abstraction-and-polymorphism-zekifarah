@@ -8,4 +8,5 @@ public class SmartThermostat extends SmartDevice {
     public void activate() {
         System.out.println(getName() + " is setting temperature to 72 degrees.");
     }
+
 }

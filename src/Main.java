@@ -3,6 +3,7 @@
 import java.util.ArrayList;
 
 public class Main {
+
     public static void main(String[] args) {
         ArrayList<SmartDevice> devices = new ArrayList<>();
         devices.add(new SmartLight("Living Room Light"));
@@ -12,4 +13,5 @@ public class Main {
             device.activate();
         }
     }
+
 }

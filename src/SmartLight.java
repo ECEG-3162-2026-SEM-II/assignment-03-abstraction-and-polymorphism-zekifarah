@@ -1,4 +1,6 @@
+
 public class SmartLight extends SmartDevice {
+
     public SmartLight(String name) {
         super(name);
     }
@@ -7,5 +9,6 @@ public class SmartLight extends SmartDevice {
     public void activate() {
         System.out.println(getName() + " is now ON at 100% brightness.");
     }
+
 }
 
