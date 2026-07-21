@@ -1,3 +1,7 @@
+
+package com.jju;
+
+
 public class SmartThermostat extends SmartDevice {
 
     public SmartThermostat(String name) {
